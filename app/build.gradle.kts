@@ -1,0 +1,41 @@
+plugins {
+    alias(libs.plugins.convention.android.application)
+    alias(libs.plugins.convention.android.compose)
+    alias(libs.plugins.convention.hilt)
+}
+
+android {
+    namespace = "dev.blakeharris.template"
+
+    defaultConfig {
+        applicationId = "dev.blakeharris.template"
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
+        }
+    }
+}
+
+ksp {
+    // Validate every binding in the graph
+    arg("dagger.fullBindingGraphValidation", "ERROR")
+}
+
+dependencies {
+    implementation(project(":core:analytics"))
+    implementation(project(":core:common"))
+    implementation(project(":core:data"))
+    implementation(project(":core:database"))
+    implementation(project(":core:datastore"))
+    implementation(project(":core:designsystem"))
+    implementation(project(":core:logging"))
+
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+}
