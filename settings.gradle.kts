@@ -23,7 +23,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Android Starter Template"
+rootProject.name = "Password Manager"
 include(":app")
 include(":core:database")
 include(":core:common")

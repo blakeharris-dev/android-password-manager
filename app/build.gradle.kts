@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace = "dev.blakeharris.template"
+    namespace = "dev.blakeharris.passwordmanager"
 
     defaultConfig {
-        applicationId = "dev.blakeharris.template"
+        applicationId = "dev.blakeharris.passwordmanager"
         versionCode = 1
         versionName = "1.0"
     }

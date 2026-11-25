@@ -1,4 +1,4 @@
-package dev.blakeharris.template
+package dev.blakeharris.passwordmanager
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

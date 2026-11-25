@@ -1,4 +1,4 @@
-# Android Starter Template
+# Password Manager
 
 [![CI](https://github.com/blakeharris-dev/android-starter-template/actions/workflows/main.yml/badge.svg)](https://github.com/blakeharris-dev/android-starter-template/actions/workflows/main.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
