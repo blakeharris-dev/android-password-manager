@@ -6,6 +6,10 @@ plugins {
 
 android {
     namespace = "dev.blakeharris.database"
+
+    testFixtures {
+        enable = true
+    }
 }
 
 room3 {
@@ -19,6 +23,19 @@ dependencies {
     implementation(libs.androidx.room3.runtime)
     implementation(libs.androidx.sqlite.bundled)
     ksp(libs.androidx.room3.compiler)
+
+    // Test fixtures
+    testFixturesApi(libs.junit)
+    testFixturesApi(libs.androidx.room3.runtime)
+    testFixturesImplementation(libs.androidx.sqlite.bundled)
+    testFixturesImplementation(libs.androidx.test.core)
+
+    // JVM tests (Robolectric)
+    testImplementation(libs.junit)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.test.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.turbine)
 
     androidTestImplementation(libs.kotlinx.coroutines.test)
 }

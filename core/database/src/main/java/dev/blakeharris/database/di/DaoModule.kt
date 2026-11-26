@@ -5,7 +5,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dev.blakeharris.database.AppDatabase
-import dev.blakeharris.database.example.ExampleDao
+import dev.blakeharris.database.credential.CredentialDao
 import javax.inject.Singleton
 
 /**
@@ -17,5 +17,5 @@ import javax.inject.Singleton
 object DaoModule {
     @Provides
     @Singleton
-    fun provideExampleDao(db: AppDatabase): ExampleDao = db.exampleDao()
+    fun provideCredentialDao(db: AppDatabase): CredentialDao = db.credentialDao()
 }

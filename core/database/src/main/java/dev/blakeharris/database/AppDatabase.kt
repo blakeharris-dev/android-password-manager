@@ -2,8 +2,8 @@ package dev.blakeharris.database
 
 import androidx.room3.Database
 import androidx.room3.RoomDatabase
-import dev.blakeharris.database.example.ExampleDao
-import dev.blakeharris.database.example.ExampleEntity
+import dev.blakeharris.database.credential.CredentialDao
+import dev.blakeharris.database.credential.CredentialEntity
 
 /**
  * The app's database. Other modules never see it: they inject DAOs instead.
@@ -12,10 +12,10 @@ import dev.blakeharris.database.example.ExampleEntity
  * database/schemas/` is committed so Room can check migrations against it.
  */
 @Database(
-    entities = [ExampleEntity::class],
+    entities = [CredentialEntity::class],
     version = 1,
     exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun exampleDao(): ExampleDao
+    abstract fun credentialDao(): CredentialDao
 }
