@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="designsystem_input_label_optional">%1$s (optional)</string>
+  <string name="designsystem_input_show_secret">Show</string>
+  <string name="designsystem_input_hide_secret">Hide</string>
+  <string name="designsystem_app_top_bar_title">Password Manager</string>
+  <string name="designsystem_app_top_bar_back">Back</string>
+  <string name="designsystem_app_top_bar_open_navigation_menu">Open navigation menu</string>
+</resources>
