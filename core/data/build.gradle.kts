@@ -13,5 +13,8 @@ dependencies {
 
     implementation(project(":core:database"))
 
+    testImplementation(testFixtures(project(":core:database")))
+    testImplementation(testFixtures(project(":core:model")))
     testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.turbine)
 }
